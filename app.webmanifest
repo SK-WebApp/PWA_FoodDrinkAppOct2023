@@ -1,0 +1,30 @@
+{
+	"name": "Food Drink Levels",
+	"short_name": "FoodDrinkLev",
+	"start_url": "/index.html", 
+	"description": "Determine and Recommend IDDSI Levels for Safe Swallowing",
+	"display": "standalone", 
+	"background_color": "#fcf7c7", 
+	"theme_color": "#b3f9da",
+	"orientation": "portrait-primary",
+	"icons": [
+		{
+		  "src": "/images/icons/android-chrome-192x192.png",
+		  "type": "image/png",
+		  "sizes": "192x192",
+		  "purpose": "any"
+		},
+		{
+		  "src": "/images/icons/android-chrome-512x512.png",
+		  "type": "image/png",
+		  "sizes": "512x512",
+		  "purpose": "any"
+		},
+		{
+		  "src": "/images/icons/maskable_icon_1280.png",
+		  "type": "image/png",
+		  "sizes": "1280x1280",
+		  "purpose": "maskable"
+		}
+	]
+}

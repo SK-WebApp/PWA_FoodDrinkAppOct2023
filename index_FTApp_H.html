@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8" />
+	<title>FoodDrink Initial</title>
+<!-- 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
+	<link rel="stylesheet" href="styles_2022GH.css">
+	<link rel="manifest" href="/app.webmanifest">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">	
+	<link rel="apple-touch-icon" href="/favicon.ico/apple-touch-icon.png">	
+	<meta name= "theme-color" content="#b3f9da">
+<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	 -->
+	
+	<!-- This is part of Bootstrap code. Also see added line in script section. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+</head>
+
+<body onload="clearEvryThing()">	
+
+	<div class="container-lg">
+		<div class="nav-wrapper">
+			<div class="left-side">
+				<div class="nav-link-wrapper">
+					<a href="index.html">About</a>
+				</div>
+				<div class="nav-link-wrapper active-nav-link">
+					<a href="index_FTApp_H.html">Test App</a>			
+				</div>
+				<div class="nav-link-wrapper">
+					<a href="linkIDDSI_2022GH.html">IDDSI Framework</a>		
+				</div>
+			</div>
+			
+			<div class="right-side">
+				<div class="site-name">
+					<a> SK_FoodTXR_WebApp_1.1.1</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content-wrapper"> 
+			<div class= "multi-rows-wrapper"> 
+				<div class="row-one-wrapper">
+<!-- 				 	<h1>Here is a guide to help you find out if it's safe to drink and eat the item you want. It will also provide recommendations on how to modify your item so it is safe to drink or eat.</h1> -->
+					<p id="p1">Step 1: Enter the item you want to eat or drink.<BR>Please enter only one item per search and keep the description simple (e.g., chicken nuggets, apple juice).</p1>				 	
+					<br>
+					<input type="text" id="text1" placeholder="Input your item here.">
+					<p id="p1">Step 2: Select the IDDSI levels your clinician has assigned you.<BR>There are typically two assigned levels: one for drinks and one for foods. If you do not know your IDDSI levels, just select "Do Not Know".</p1>						 	
+					<p> IDDSI Levels for Drinks or Liquids</p>
+					<select id="Dlevels">	
+						<option value="">-Select One-</option>
+						<option>Do Not Know </option>	
+						<option>IDDSI Level 0, Thin</option>					
+						<option>IDDSI Level 1, Slightly Thick</option>
+						<option>IDDSI Level 2, Mildly Thick</option>
+						<option>IDDSI Level 3, Liquidized or Moderately Thick</option>
+						<option>IDDSI Level 4, Pureed or Extremely Thick</option>				
+					</select>
+					
+					<p> IDDSI Levels for Foods or Solids</p>
+					<select id="Flevels">
+						<option value="">-Select One-</option>	
+						<option>Do Not Know </option>	
+						<option>IDDSI Level 3, Liquidized or Moderately Thick</option>
+						<option>IDDSI Level 4, Pureed or Extremely Thick</option>
+						<option>IDDSI Level 5, Minced & Moist</option>
+						<option>IDDSI Level 6, Soft & Bite-Sized</option>	
+						<option>IDDSI Level 7, Easy to Chew</option>
+						<option>IDDSI Level 7, Regular</option>							
+					</select>	
+					
+						
+					<p id="p1"> After you have completed steps 1 and 2, please click on the "Enter" bottom to continue. </p1>
+					<br>
+					<button id="button1" onclick= "StoreDirect(); clearCarried();">Enter</button>
+				</div>
+							
+<!-- 		
+				<div class="row-two-wrapper">
+						<div id="row-two"></div>
+				</div>					
+ -->
+<!-- 					
+				<div class="row-three-wrapper">
+						<div id="comment"></div>		
+				</div>				
+ -->
+												
+			</div>
+		</div>
+			
+	</div>
+	
+	<script src="FTApp_2022GH.js"></script>
+	<script src="/app.js"></script>	
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>	
+	
+</body>
+</html>
