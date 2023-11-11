@@ -138,7 +138,7 @@ var data = { "foodtext":
 			"SpoonTiltTest": "falls off easily when tilted, not stick to the spoon", 
 			"ForkPressureTest": "easily broken apart with light pressure from a fork or spoon held on its side to cut",
 			"CommonFoodExample": "cooked, tender and soft meat and fish; steamed or boiled vegetables; drain or thicken excess liquid",
-			"ModificationNote": "One can use tools such as a blender, chopper, masher or cooking techniques such as steaming and poaching to tenderize. Can also add a thick and smooth sauce to increase moisture level."
+			"ModificationNote": "One can use tools such as a blender, chopper, masher or cooking techniques such as steaming and poaching to tenderize. Can also add a thick and smooth sauce to increase moisture level"
 		}, 
 		{	
 			"IDDSILevel": "7", 
