@@ -229,10 +229,12 @@ body {
 	margin-bottom: 0.3em; 
 /* 	margin-top: 1em;  */ /* this worked well for Page1 */
 	line-height: 1.2em; 
+	font-weight: 400; 
 }
 
 #p1{
-	margin-bottom: 1.2em; 
+/* 	margin-bottom: 1.2em;  */
+	margin-bottom: 0em; 
 	margin-top: 1em; 
 }
 
@@ -583,6 +585,7 @@ gin: 0;
     box-sizing: border-box;
 }
 
+
 body {
 	font-family:"Lato", sans-serif; 
 	margin: 0px; 
@@ -803,10 +806,12 @@ body {
 	margin-bottom: 0.3em; 
 /* 	margin-top: 1em;  */ /* this worked well for Page1 */
 	line-height: 1.2em; 
+	font-weight: 400; 
 }
 
 #p1{
-	margin-bottom: 1.2em; 
+/* 	margin-bottom: 1.2em;  */
+	margin-bottom: 0em; 
 	margin-top: 1em; 
 }
 
