@@ -9,9 +9,9 @@
 		'/picture6.png', /* image for home page */
 		'/styles_2022GH.css', /* my css style file */
 		'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css', /* Bootstrap css */
-		'/favicon.ico/favicon.ico',
+		'/favicon/favicon.ico',
 		'/favicon.svg',
-		'/favicon.ico/apple-touch-icon.png',
+		'/favicon/apple-touch-icon.png',
 		'/fallback.html'
 	];
 
