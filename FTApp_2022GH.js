@@ -115,7 +115,7 @@ var data = { "foodtext":
 			"BitingParticleSize": "4x4x15mm", 
 			"FlowTest": false,
 			"ForkDripTest": "Yes", 
-			"ForkDripDescription": "doesn't easily flow or drip easily through prongs, can sit in a mound above the fork", 
+			"ForkDripDescription": "doesn't easily flow or drip through prongs, can sit in a mound above the fork", 
 			"SpoonTiltTest": "falls off easily when tilted, not stick to the spoon", 
 			"ForkPressureTest": "easily separated and come through the tines or prongs of a fork",
 			"CommonFoodExample": "finely minced or chopped or mashed meat, fish, fruits or vegetables; drain excess liquid",
@@ -890,6 +890,9 @@ function currentLevelDes () {
 			if (FlevelNumber[0] == "4") {
 				document.location.href = "index_FTApp_MFD.html";	
 			}	
+			if (FlevelNumber[0] == "5") {
+				document.location.href = "index_FTApp_MFD5.html";	
+			}	
  		}				
 		if (carriedDFValue == "Transitional" && carriedUI6 != null){
 //  			alert ("ForkDrip-Transitional")
@@ -899,7 +902,10 @@ function currentLevelDes () {
 			}			
 			if (TlevelNumber[0] == "4") {
 				document.location.href = "index_FTApp_MFD.html";	
-			}			
+			}
+			if (FlevelNumber[0] == "5") {
+				document.location.href = "index_FTApp_MFD5.html";	
+			}				
 		}		
 	}
 
@@ -1580,7 +1586,7 @@ function currentLevelDes () {
  	}
  	
  	/* This function will unhide Size Test */
- 	 function displaySize () {  	 		
+ 	 function displaySize() {  	 		
 	 	  var mod1 = document.getElementById("testSi");	
 		  if (mod1.style.display = "none") {
 	   		 mod1.style.display = "block";
@@ -1596,7 +1602,7 @@ function currentLevelDes () {
  	}
  	
   	/* This function will unhide Fork Drip Test */	 	
- 	function displayFD () {  	 		
+ 	function displayFD() {  	 		
 	 	  var mod1 = document.getElementById("testFD");	
 		  if (mod1.style.display = "none") {
 	   		 mod1.style.display = "block";
@@ -1612,7 +1618,7 @@ function currentLevelDes () {
  	}
  	
   	/* This function will unhide Spoon Tilt Test */	
- 	 	function displaySpT () {  	 		
+ 	 	function displaySpT() {  	 		
  	 	  var mod2 = document.getElementById("testSpT");	
 		  if (mod2.style.display = "none") {
 	   		 mod2.style.display = "block";
@@ -1628,7 +1634,7 @@ function currentLevelDes () {
  	}
  	
    	/* This function will unhide Fork Pressure Test */	
- 	 	function displayFP () {  
+ 	 	function displayFP() {  
  	   	  var mod3 = document.getElementById("testFP");	
 		  if (mod3.style.display = "none") {
 	   		 mod3.style.display = "block";
@@ -1643,53 +1649,74 @@ function currentLevelDes () {
   			}	
  	}
 
+   	/* This function will unhide Flow Test */	
+		function displayFL() {
+			var mod = document.getElementById("testFL");
+				console.log (carriedDFValue, mod)	 	
+			if (mod.style.display = "none") {
+				 mod.style.display = "block";
+				} else {
+				mod.style.display = "none";
+				}
+			var modB = document.getElementById("button10");
+				console.log (carriedDFValue, mod)	 	
+			if (modB.style.display = "none") {
+				 modB.style.display = "block";
+				} else {
+				modB.style.display = "none";
+				}		
+			}
+
+
  /* This function unhide the Tests associated with IDDSI3 , originally hidden */		
 	function displayTest() {
  		if (carriedDFValue == "Drink") {  
 //  		  	alert("displayTest-Drink section")
 			var DlevelNumber = carriedUI2.match(/\d+/);
 			if (DlevelNumber[0] != "4") {
-			  var mod = document.getElementById("testFL");
-				console.log (carriedDFValue, mod)	 	
-			  if (mod.style.display = "none") {
-				 mod.style.display = "block";
-				} else {
-				mod.style.display = "none";
-				}
-			  var modB = document.getElementById("button10");
-				console.log (carriedDFValue, mod)	 	
-			  if (modB.style.display = "none") {
-				 modB.style.display = "block";
-				} else {
-				modB.style.display = "none";
-				}		
+				displayFL();				
+			  // var mod = document.getElementById("testFL");
+// 				console.log (carriedDFValue, mod)	 	
+// 			  if (mod.style.display = "none") {
+// 				 mod.style.display = "block";
+// 				} else {
+// 				mod.style.display = "none";
+// 				}
+// 			  var modB = document.getElementById("button10");
+// 				console.log (carriedDFValue, mod)	 	
+// 			  if (modB.style.display = "none") {
+// 				 modB.style.display = "block";
+// 				} else {
+// 				modB.style.display = "none";
+// 				}		
 			}
 			if (DlevelNumber[0] == "4") {
-  	 			displayFD ();
-  	 			displaySpT ();				
+  	 			displayFD();
+  	 			displaySpT();				
 			}						
 		}
  		if (carriedDFValue == "Transitional" && carriedUI5 == "drink") {  
 //  		  	 alert("displayTest-transitional-drink section")
 			if (carriedUI6 != "IDDSI 4") {
-			  var mod = document.getElementById("testFL");
-				console.log (carriedUI6, mod)	
-			  if (mod.style.display = "none") {
-				 mod.style.display = "block";
-				} else {
-				mod.style.display = "none";
-				}
-			  var modB = document.getElementById("button10");
-				console.log (carriedUI6, mod)	 	
-			  if (modB.style.display = "none") {
-				 modB.style.display = "block";
-				} else {
-				modB.style.display = "none";
-				}		
+ 				displayFL();
+// 			  var mod = document.getElementById("testFL");
+// 				console.log (carriedUI6, mod)	
+// 			  if (mod.style.display = "none") {
+// 				 mod.style.display = "block";
+// 				} else {
+// 				mod.style.display = "none";
+// 				}
+// 			  var modB = document.getElementById("button10");
+// 				console.log (carriedUI6, mod)	 	
+// 			  if (modB.style.display = "none") {
+// 				 modB.style.display = "block";
+// 				} else {
+// 				modB.style.display = "none";
+// 				}		
 			}
 			if (carriedUI6 == "IDDSI 4") {
-  	 			displayFD ();
-  	 			displaySpT ();				
+  	 			displayFD();
+  	 			displaySpT();				
 			}						
 		}
 		
@@ -1698,25 +1725,26 @@ function currentLevelDes () {
   	 		var FlevelNumber = carriedUI3.match(/\d+/);
 	
   	 		if (FlevelNumber[0] == "3") {
-  	 			displayFD ();
-  	 			displaySpT ();			
+  	 			displayFD();
+  	 			displaySpT();			
 			}	
   	 		if (FlevelNumber[0] == "4") {
-  	 			displayFD ();
-  	 			displaySpT ();	
-  	 			displayFP ();			
+  	 			displayFD();
+  	 			displaySpT();	
+  	 			displayFP();			
 			}	
   	  	 	if (FlevelNumber[0] == "5") {
-				displaySize ();
-  	 			displaySpT ();	
-  	 			displayFP ();			
+				displaySize();
+				displayFD();
+  	 			displaySpT();	
+  	 			displayFP();			
 			} 		
   	  	 	if (FlevelNumber[0] == "6") {
-				displaySize ();
-  	 			displayFP ();			
+				displaySize();
+  	 			displayFP();			
 			} 	
 	  	  	if (FlevelNumber[0] == "7") {
-  	 			displayFP ();			
+  	 			displayFP();			
 			} 	
 		}			
   	 	if (carriedDFValue == "Transitional" && carriedUI5 == "food") {  
@@ -1732,6 +1760,7 @@ function currentLevelDes () {
 			}	
   	  	 	if (carriedUI6 == "IDDSI 5") {
 				displaySize ();
+				displayFD ();
   	 			displaySpT ();	
   	 			displayFP ();			
 			} 		
@@ -1894,6 +1923,7 @@ function currentLevelDes () {
 			document.getElementById('testSi').innerHTML = "Size: No more than " + foodtext[FlevelNumber].BitingParticleSize + ", fit between the tines of a standard fork.";
 			document.getElementById('testFP').innerHTML = "Food Pressure Test: Food that are " + foodtext[FlevelNumber].ForkPressureTest + ".";
 			document.getElementById('testSpT').innerHTML = "Spoon Tilt Test: Item should " + foodtext[FlevelNumber].SpoonTiltTest + ".";		
+			document.getElementById('testFD').innerHTML = "Fork Drip Test: Food that are " + foodtext[FlevelNumber].ForkDripDescription + ".";
 			}
 			if (FlevelNumber[0] == "6") {
 			document.getElementById('testSi').innerHTML = "Size: No more than " + foodtext[FlevelNumber].BitingParticleSize + ", about the width of a standard dinner fork.";
@@ -1938,6 +1968,7 @@ function currentLevelDes () {
 				document.getElementById('testSi').innerHTML = "Size: No more than " + foodtext[TlevelNumber].BitingParticleSize + ", fit between the tines of a standard fork.";
 				document.getElementById('testFP').innerHTML = "Food Pressure Test: Food that are " + foodtext[TlevelNumber].ForkPressureTest + ".";
 				document.getElementById('testSpT').innerHTML = "Spoon Tilt Test: Item should " + foodtext[TlevelNumber].SpoonTiltTest + ".";		
+				document.getElementById('testFD').innerHTML = "Fork Drip Test: Food that are " + foodtext[FlevelNumber].ForkDripDescription + ".";
 				}
 				if (carriedUI6 == "IDDSI 6") {
 				document.getElementById('testSi').innerHTML = "Size: No more than " + foodtext[TlevelNumber].BitingParticleSize + ", about the width of a standard dinner fork.";

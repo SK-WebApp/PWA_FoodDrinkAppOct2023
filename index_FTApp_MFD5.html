@@ -2,7 +2,7 @@
 <html lang = "en">
 <head>
 	<meta charset="utf-8" />
-	<title>FoodDrink Page_2c5</title>
+	<title>FoodDrink Page_FD5</title>
 <!-- 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
 	<link rel="stylesheet" href="styles_2022GH.css">
 <!-- 	<link rel="manifest" href="/app.webmanifest"> -->
@@ -21,8 +21,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>	
-	
-<body onload="RetrieveInputValue();RetrieveSelfSelectValue();renderHTMLmodcomment();testSectionDisp();displayTest();"> 
+
+<body onload="RetrieveInputValue();RetrieveSelfSelectValue();"> 
 
 	<div class="container-lg">
 		<div class="nav-wrapper">
@@ -52,48 +52,47 @@
 					<div id="userinput2"></div>	
 					<div id="userinput3"></div>	
 					<div id="userinput4"></div>	
-					<div id="userinput6"></div>									
+					<div id="userinput6"></div>														
 				</div>	
 								
 				<div class="row-one-wrapper">
-					<button id="button2" onclick="Go2Start();clearCarried();">Back To Start</button>
+<!-- 
+					<h2>Do you need or does your clinician require any modifications to your food (i.e., change to size, texture, consistency, viscosity)? </h2>				
+					<select id="level2b" onchange= "OutputValueArray(this)">
+						<option value="NA">-Select One-</option>
+						<option value="Yes">Yes, I do need some modifications.</option>
+						<option value="No">No, I do not need any modifications.</option>
+					</select>
+ -->
+
+					<button id="button5" onclick="history.back()">Back One</button>
+					<button id="button2" onclick="Go2Start()">Back To Start</button>
 				</div>
 			
 				<div class="row-three-wrapper">
-					<h3>Comment Section:</h3> 
-					<div id="mod-comment"></div>									
-					<div id="error-info"></div>					
+					<h3>IDDSI Level 5 Fork Drip Test Video:</h3> 
+					<div class="iframe-vid">
+<!-- 
+						<iframe class="responsive-iframe" src="https://www.youtube.com/embed/BcYuDst-t14?si=2WrhJGcMoGyFLDcL&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+						</iframe>
+ -->
+						<iframe class="responsive-iframe" src="https://www.youtube.com/embed/BcYuDst-t14?si=2WrhJGcMoGyFLDcL&amp;start=17&end=26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+						</iframe>
+				    </div>										
+<!-- 
+					<div id="mod-comment"></div>				
+					<div id="error-info"></div>			
+ -->
 				</div>
 				
 				<div class="row-four-wrapper">
-					<h3>Test Section: </h3>	
-					
-					<div class="row-subfour">
-						<div id="testSi"></div>	
-						<button id="button6" onclick= "MSize()">Check Size</button>		
-						
-						<div id="testFP"></div>	
-						<button id="button7" onclick="ForkPress()">Fork Pressure Test</button>	
-									
-						<div id="testSpT"></div>	
-						<button id="button8" onclick="SpoonTilt()">Spoon Tilt Test</button>	
-						
-						<div id="testFD"></div>	
-						<button id="button9" onclick="ForkDrip()">Fork Drip Test</button>										
-					</div>
 				</div>	
 				
-			  	<div class="row-five-wrapper">
-			  		<h3>Preparation Section: </h3>
-			  		<div id="prep"></div>
-					<p>You can also click on the Preparation Videos button to see how to prepare or modify specific items to meet testing criteria.</p>
-			  		<button id="button11" onclick="Prep5()">Preparation Videos</button>										
-			  	</div>
-	
-			</div>		
-		</div>
+				
+		</div>		
 	</div>
 	
+
 	<script src="FTApp_2022GH.js"></script>
 	<script src="app.js"></script>	
 
