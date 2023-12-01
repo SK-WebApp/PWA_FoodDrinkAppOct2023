@@ -570,8 +570,6 @@ ul {
  */
 
 
-
-
 br {
 	display: block; /* makes it have a width */
 	content: ""; /* clears default height */
@@ -580,11 +578,14 @@ br {
 
 #mod-comment  {
 }
+
 gin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* Duplicated CSS code ? */
 
 body {
 	font-family:"Lato", sans-serif; 

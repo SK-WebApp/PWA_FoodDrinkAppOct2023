@@ -765,7 +765,8 @@ function currentLevelDes () {
 		if (carriedDFValue == "Food") {
 // 			alert ("M size-Food")
 			if (FlevelNumber[0] == "5") {
-				document.location.href = "index_FTApp_MSize.html";
+// 				document.location.href = "index_FTApp_MSize.html";
+				document.location.href = "index_FTApp_MSizeN5.html";
 			}	
 			if (FlevelNumber[0] == "6") {
 				document.location.href = "index_FTApp_MSize6.html";
@@ -775,7 +776,8 @@ function currentLevelDes () {
 // 			alert ("M size-Transitional")
 			var TlevelNumber = carriedUI6.match(/\d+/);
 			if (TlevelNumber[0] == "5") {
-				document.location.href = "index_FTApp_MSize.html";
+// 				document.location.href = "index_FTApp_MSize.html";
+				document.location.href = "index_FTApp_MSizeN5.html";
 			}	
 			if (TlevelNumber[0] == "6") {
 				document.location.href = "index_FTApp_MSize6.html";
