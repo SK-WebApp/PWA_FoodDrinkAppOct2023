@@ -757,32 +757,29 @@ function currentLevelDes () {
 /* Function for connecting to different Food Particle Size Tests based on IDDIS levels */
 	function MSize(){
 		alert ("Check Size")
-		alert(carriedDFValue)
-//		console.log (carriedDFValue, DlevelNumber, FlevelNumber); 
-		var DlevelNumber = carriedUI2.match(/\d+/); /* this var will not appear as it only applies to Food */
-		var FlevelNumber = carriedUI3.match(/\d+/); /* assuming carriedUI is cleared */
-		
+		console.log (carriedDFValue, DlevelNumber, FlevelNumber); 
+		var DlevelNumber = carriedUI2.match(/\d+/); /* will not need this since it only applies to Food */
+		var FlevelNumber = carriedUI3.match(/\d+/);
+
 		if (carriedDFValue == "Food") {
 // 			alert ("M size-Food")
 			if (FlevelNumber[0] == "5") {
-// 				document.location.href = "index_FTApp_MSize.html";
 				document.location.href = "index_FTApp_MSizeN5.html";
 			}	
 			if (FlevelNumber[0] == "6") {
 				document.location.href = "index_FTApp_MSize6.html";
-			}			
+			}				
 		}	
-		if (carriedDFValue = "Transitional" && carriedUI6 != null) {
+		if (carriedDFValue == "Transitional" && carriedUI6 != null) {
 // 			alert ("M size-Transitional")
-			var TlevelNumber = carriedUI6.match(/\d+/);
+			var TlevelNumber = carriedUI6.match(/\d+/); /* assuming carriedUI6 is cleared from before*/
 			if (TlevelNumber[0] == "5") {
-// 				document.location.href = "index_FTApp_MSize.html";
 				document.location.href = "index_FTApp_MSizeN5.html";
 			}	
 			if (TlevelNumber[0] == "6") {
 				document.location.href = "index_FTApp_MSize6.html";
-			}		
-		}				
+			}			
+		}							
 	}
 
 /* Function for connecting to different Fork Pressure Tests based on IDDIS levels */
