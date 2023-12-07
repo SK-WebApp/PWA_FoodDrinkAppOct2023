@@ -877,13 +877,13 @@ function currentLevelDes () {
 		var FlevelNumber = carriedUI3.match(/\d+/);	
 	
  		if (carriedDFValue == "Drink" && carriedUI2 != "Do Not Know"){
-//  			alert ("ForkDrip-Drink")
+  			alert ("ForkDrip-Drink")
 			if (DlevelNumber[0] == "4") {
 				document.location.href = "index_FTApp_MFD.html";	
 			}
  		}
  		if (carriedDFValue == "Food" && carriedUI3 != "Do Not Know"){
-//  			alert ("ForkDrip-Food")
+ 			alert ("ForkDrip-Food")
 			if (FlevelNumber[0] == "3") {
 				document.location.href = "index_FTApp_MFD3.html";	
 			}			
@@ -895,7 +895,7 @@ function currentLevelDes () {
 			}	
  		}				
 		if (carriedDFValue == "Transitional" && carriedUI6 != null){
-//  			alert ("ForkDrip-Transitional")
+			alert ("ForkDrip-Transitional")
 			var TlevelNumber = carriedUI6.match(/\d+/);
 			if (TlevelNumber[0] == "3") {
 				document.location.href = "index_FTApp_MFD3.html";	
@@ -903,7 +903,7 @@ function currentLevelDes () {
 			if (TlevelNumber[0] == "4") {
 				document.location.href = "index_FTApp_MFD.html";	
 			}
-			if (FlevelNumber[0] == "5") {
+			if (TlevelNumber[0] == "5") {
 				document.location.href = "index_FTApp_MFD5.html";	
 			}				
 		}		
