@@ -872,6 +872,7 @@ function currentLevelDes () {
 
 /* Function for connecting to different Fork Drip Tests based on IDDIS levels */
 	function ForkDrip() { 
+		alert ("Fork Drip Test")
 		var DlevelNumber = carriedUI2.match(/\d+/);
 		var FlevelNumber = carriedUI3.match(/\d+/);	
 	
