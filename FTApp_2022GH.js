@@ -756,7 +756,7 @@ function currentLevelDes () {
 
 /* Function for connecting to different Food Particle Size Tests based on IDDIS levels */
 	function MSize(){
-		alert ("Check Size")
+//		alert ("Check Size")
 		console.log (carriedDFValue, DlevelNumber, FlevelNumber); 
 		var DlevelNumber = carriedUI2.match(/\d+/); /* will not need this since it only applies to Food */
 		var FlevelNumber = carriedUI3.match(/\d+/);
@@ -784,7 +784,7 @@ function currentLevelDes () {
 
 /* Function for connecting to different Fork Pressure Tests based on IDDIS levels */
 	function ForkPress() {
-		alert ("Fork Pressure Test")
+//		alert ("Fork Pressure Test")
 		console.log (carriedDFValue, DlevelNumber, FlevelNumber); 
 		var DlevelNumber = carriedUI2.match(/\d+/); /* will not need this since it only applies to Food */
 		var FlevelNumber = carriedUI3.match(/\d+/);
@@ -824,7 +824,7 @@ function currentLevelDes () {
 
 /* Function for connecting to different Spoon Tilt Tests based on IDDIS levels */
 	function SpoonTilt(){
-		alert ("Spoon Tilt Test")
+//		alert ("Spoon Tilt Test")
 		console.log (carriedDFValue, DlevelNumber, FlevelNumber); 
 		var DlevelNumber = carriedUI2.match(/\d+/);
 		var FlevelNumber = carriedUI3.match(/\d+/);
@@ -872,18 +872,18 @@ function currentLevelDes () {
 
 /* Function for connecting to different Fork Drip Tests based on IDDIS levels */
 	function ForkDrip() { 
-		alert ("Fork Drip Test")
+//		alert ("Fork Drip Test")
 		var DlevelNumber = carriedUI2.match(/\d+/);
 		var FlevelNumber = carriedUI3.match(/\d+/);	
 	
  		if (carriedDFValue == "Drink" && carriedUI2 != "Do Not Know"){
-  			alert ("ForkDrip-Drink")
+//  		alert ("ForkDrip-Drink")
 			if (DlevelNumber[0] == "4") {
 				document.location.href = "index_FTApp_MFD.html";	
 			}
  		}
  		if (carriedDFValue == "Food" && carriedUI3 != "Do Not Know"){
- 			alert ("ForkDrip-Food")
+// 			alert ("ForkDrip-Food")
 			if (FlevelNumber[0] == "3") {
 				document.location.href = "index_FTApp_MFD3.html";	
 			}			
@@ -895,7 +895,7 @@ function currentLevelDes () {
 			}	
  		}				
 		if (carriedDFValue == "Transitional" && carriedUI6 != null){
-			alert ("ForkDrip-Transitional")
+//			alert ("ForkDrip-Transitional")
 			var TlevelNumber = carriedUI6.match(/\d+/);
 			if (TlevelNumber[0] == "3") {
 				document.location.href = "index_FTApp_MFD3.html";	
