@@ -1121,6 +1121,14 @@ function currentLevelDes () {
 			StoreString_c (htmlString); 	
 		}	
 
+		if (currentLevel == "level5b" && newValue == "no restriction") { 
+			console.log("no restriction")
+			htmlString1 += '<p>' + "Size: Larger than 15x15x15mm for adults (8x8x8mm for children)" + '.</p>';	
+			StoreString (htmlString1); 	
+			htmlString += carriedString1 + htmlString1;	
+			StoreString_c (htmlString); 	
+		}	
+
 		if (currentLevel == "level6a1" && newValue == "formulas") { 
 			htmlString1 += '<p>' + " More like anti-regurgitation infant formulas" + '.</p>';	
 			StoreString (htmlString1); 	
@@ -1230,7 +1238,14 @@ function currentLevelDes () {
      		var extractedDes = newArray[0].Description;	
    			htmlString += '<p>' + "Based on your selection, your item <u>(" + carriedUI1 + ") is at IDDSI level " + extractedLevel + ", " + extractedDes + ".</u> Since you don't know your recommended IDDSI food level (" + carriedUI3 + "), please double check with your clinician to see whether you are safe to consume items at this level." +'</p>';
 			}	
-					
+				
+		if (currentLevel == "level5b" && newValue == "no restriction") {
+			document.getElementById("error-info").innerHTML = ""; 
+			var htmlString = ""; 
+			displayMod1();	
+			htmlString += '<p>' + "Correction Needed - Please modify current item so it meets either one of the above selection choices (i.e., adjust lump size), in order to continue." +'</p>';
+			}
+											
      	if (currentLevel == "level6a1" && carriedUI2 == "Do Not Know") { 
      		var extractedLevel = newArray[0].IDDSILevel;
      		var extractedDes = newArray[0].Description;	
