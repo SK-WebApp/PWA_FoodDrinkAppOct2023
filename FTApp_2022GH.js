@@ -575,17 +575,25 @@ function currentLevelDes () {
 		 if (id == "level5b") {
 			var level5Value = document.getElementById(currentLevel).value;
 			var newArray_c = JSON.parse(carriedArray); 
-			var filteredArray = newArray_c.filter(ele => ele.BitingParticleSize.includes(level5Value));
-			UpdateSet_FArray (filteredArray);	
-			currentLevelDes(); 	
-			if (carriedUI3 == "Do Not Know") {
-				renderHTMLerror(currentLevel);
-				clearComment();
-				}
-			if (carriedUI3 != "Do Not Know") {
-				renderHTMLcomment(currentLevel, newArray);
-				clearError();
-				}			
+			if (level5Value == "4x4x15mm" || level5Value == "15x15x15mm") {
+				var filteredArray = newArray_c.filter(ele => ele.BitingParticleSize.includes(level5Value));
+				UpdateSet_FArray (filteredArray);	
+				currentLevelDes(); 	
+				if (carriedUI3 == "Do Not Know") {
+					renderHTMLerror(currentLevel);
+					clearComment();
+					}
+				if (carriedUI3 != "Do Not Know") {
+					renderHTMLcomment(currentLevel, newArray);
+					clearError();
+					}
+				}	
+			if (level5Value == "no restriction") {	
+				var filteredArray = newArray_c.filter(ele => ele.BitingParticleSize !==null);			
+				UpdateSet_FArray (filteredArray);			
+ 				renderHTMLerror();
+ 				clearComment();
+				}		
 			}			
 			
 		 if (id == "level6a1") {
