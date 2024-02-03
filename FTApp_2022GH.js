@@ -970,7 +970,12 @@ function currentLevelDes () {
 	function CChick() {
 		document.location.href = "index_FTApp_P6_1.html";
 	}
-
+	function Prep7() {
+		document.location.href = "index_FTApp_P7.html";
+	}
+	function BisGry() {
+		document.location.href = "index_FTApp_P7_1.html";	
+	}
 
 /* This function links to different IDDSI level modification videos */
  	function ModLinked() {
