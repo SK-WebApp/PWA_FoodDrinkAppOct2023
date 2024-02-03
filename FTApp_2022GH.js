@@ -1896,7 +1896,8 @@ function currentLevelDes () {
 				}															
 			}	
 		
-			htmlString += '<p>' + "To qualify for " + carriedUI6 + " " + carriedUI5 + ", your item must pass the following test(s). <br /> See video guide below for details" + '.</p>';						
+// 			htmlString += '<p>' + "To qualify for " + carriedUI6 + " " + carriedUI5 + ", your item must pass the following test(s). <br /> See video guide below for details" + '.</p>';						
+			htmlString += '<p>' + "To qualify for " + carriedUI6 + TDes + " " + carriedUI5 + ", your item must pass the following test(s). <br /> See video guide below for details" + '.</p>';	
  		}				
 						
 		ModComContainer.insertAdjacentHTML('beforeend', htmlString); 
