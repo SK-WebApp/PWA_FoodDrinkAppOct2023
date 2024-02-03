@@ -1533,8 +1533,10 @@ function currentLevelDes () {
 		document.getElementById('userinput4').innerHTML = "<ul><li>Your self-selected IDDSI " + carriedDFValue + " Level is:  <span>" + carriedUI4a + ", "+ carriedUI4b + "</span></li></ul>";	
 
 		if (carriedDFValue == "Transitional") { 
+			var TlevelNumber = carriedUI6.match(/\d+/);
+ 			var TDes = foodtext[TlevelNumber].Description;	
 			document.getElementById('userinput4').innerHTML = "<ul><li>You selected your item as:  <span>" + carriedDFValue + "</span></li></ul>";
-			document.getElementById('userinput6').innerHTML = "<ul><li>You are currently exploring: " + carriedUI6 + " level " + carriedUI5 + " modification techniques.</li></ul>";
+			document.getElementById('userinput6').innerHTML = "<ul><li>You are currently exploring: " + TlevelNumber+ " " + TDes + " level " + carriedUI5 + " modification techniques.</li></ul>";
 		}
 	}
 
