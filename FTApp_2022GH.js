@@ -1536,7 +1536,7 @@ function currentLevelDes () {
 			var TlevelNumber = carriedUI6.match(/\d+/);
  			var TDes = foodtext[TlevelNumber].Description;	
 			document.getElementById('userinput4').innerHTML = "<ul><li>You selected your item as:  <span>" + carriedDFValue + "</span></li></ul>";
-			document.getElementById('userinput6').innerHTML = "<ul><li>You are currently exploring: " + TlevelNumber+ " " + TDes + " level " + carriedUI5 + " modification techniques.</li></ul>";
+			document.getElementById('userinput6').innerHTML = "<ul><li>You are currently exploring: " + carriedUI6 + " " + TDes + " level " + carriedUI5 + " modification techniques.</li></ul>";
 		}
 	}
 
@@ -1549,7 +1549,9 @@ function currentLevelDes () {
 			document.getElementById('userinput5').innerHTML = "Click on each button to view preparation videos for  <span>" + carriedUI3 + "</span> items.";
 		}
 		if (carriedDFValue == "Transitional") {
-			document.getElementById('userinput5').innerHTML = "Click on each button to view preparation videos for  <span>" + carriedUI6 + " " + carriedUI5 + "</span> items.";		
+			var TlevelNumber = carriedUI6.match(/\d+/);
+ 			var TDes = foodtext[TlevelNumber].Description;	
+			document.getElementById('userinput5').innerHTML = "Click on each button to view preparation videos for  <span>" + carriedUI6 + " " + TDes + " " + carriedUI5 + "</span> items.";		
 		}	
 	}
 
